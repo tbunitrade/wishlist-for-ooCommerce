@@ -1,0 +1,35 @@
+2023-08-28T13:02:20+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Wishlist does not have a method "custom_post_type" in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-settings.php(638): do_action('init')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-config.php(96): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-load.php(50): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin-ajax.php(22): require_once('/Applications/M...')
+#6 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-28T13:02:22+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Wishlist does not have a method "custom_post_type" in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-settings.php(638): do_action('init')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-config.php(96): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-load.php(50): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(13): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-28T13:02:24+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Wishlist does not have a method "custom_post_type" in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-settings.php(638): do_action('init')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-config.php(96): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-load.php(50): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(13): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
