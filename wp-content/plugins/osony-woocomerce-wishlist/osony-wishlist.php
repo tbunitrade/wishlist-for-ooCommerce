@@ -38,43 +38,12 @@ spl_autoload_register( function($cLassName) {
 
 require_once plugin_dir_path (__FILE__).'libraries/class-wishlist.php';
 
-//class Wishlist {
-//
-//    public function __construct()
-//    {
-//        add_action('init', array($this, 'custom_post_type'));
-//    }
-//
-//    public function register()
-//    {
-//        add_action('admin_enqueue_scripts', array($this, 'admin_enqueue'));
-//        //add_action('admin_enqueue_scripts', array($this, 'admin_enqueue'));
-//    }
-//
-//    public function activate()
-//    {
-//        $this->custom_post_type();
-//        // flush rewrite rules
-//        flush_rewrite_rules();
-//    }
-//
-//    public function deactivate() {
-//        flush_rewrite_rules();
-//    }
-//
-//    public function custom_post_type() {
-//        register_post_type('book', ['public' => true, 'label' => 'Books']);
-//    }
-//
-//    public function admin_enqueue() {
-//        // enqueue all our scripts
-//        wp_enqueue_style('stylesheet', plugins_url('public/css/class-stylesheet-wishlist-admin.css',  __FILE__));
-//    }
-//
-//}
-
 if (class_exists('Wishlist')) {
     $WishListPlugin = new Wishlist();
     $WishListPlugin->register();
-    //$WishListPlugin::register();
 }
+
+
+register_activation_hook( __FILE__, array($WishListPlugin, 'activate'));
+
+register_deactivation_hook(__FILE__, array($WishListPlugin, 'deactivate'));

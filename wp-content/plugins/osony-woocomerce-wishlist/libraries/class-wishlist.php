@@ -14,6 +14,11 @@ class Wishlist {
     {
         add_action('wp_enqueue_scripts', array($this, 'public_enqueue'));
         add_action('admin_enqueue_scripts', array($this, 'admin_enqueue'));
+
+
+        add_action( 'woocommerce_product_loop_title_classes', array($this, 'whishlist_show_in_catalog_mode'), 2 );
+        add_action( 'woocommerce_single_product_summary', array($this, 'whishlist_show_on_product_page'), 15 );
+
     }
 
     public function activate()
@@ -28,8 +33,7 @@ class Wishlist {
     }
 
     public function custom_post_type() {
-        // register_post_type('wishlist', ['public' => true, 'label' => 'Wishlist']);
-        // register page with specific params
+        // register  CPT or page with specific params
         register_post_type('Whishlist', ['public' => true, 'label' => 'whishlist']);
     }
 
@@ -43,5 +47,17 @@ class Wishlist {
         // enqueue all our scripts
         wp_enqueue_style('stylesheet', OSONY_WISHLIST_BASEURL . 'public/css/class-stylesheet-wishlist-admin.css'  );
     }
+
+    public function whishlist_show_in_catalog_mode(){
+        $url = OSONY_WISHLIST_BASEURL . 'public/images/heart.svg';
+        echo '<img class="osony-wishlist-svg" src="'. $url.'">';
+    }
+
+    public function whishlist_show_on_product_page(){
+        $url = OSONY_WISHLIST_BASEURL . 'public/images/heart.svg';
+        echo '<img class="osony-wishlist-svg" src="'. $url.'">';
+    }
+
+
 
 }
