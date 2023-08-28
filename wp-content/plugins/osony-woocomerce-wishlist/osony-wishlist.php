@@ -37,11 +37,16 @@ spl_autoload_register( function($cLassName) {
 });
 
 require_once plugin_dir_path (__FILE__).'libraries/class-wishlist.php';
+require_once plugin_dir_path (__FILE__).'libraries/class-wishlist-ajax.php';
 
 if (class_exists('Wishlist')) {
     $WishListPlugin = new Wishlist();
     $WishListPlugin->register();
 }
+
+$WishListPluginAjax = new WishlistAjax();
+
+$WishListPluginAjax->register_post_type();
 
 
 register_activation_hook( __FILE__, array($WishListPlugin, 'activate'));
