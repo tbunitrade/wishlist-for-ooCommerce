@@ -3,3 +3,4 @@ node_modules
 dummy
 .htaccess
 .gitignore
+wp-content/plugins/wt-woocommerce-wishlist/

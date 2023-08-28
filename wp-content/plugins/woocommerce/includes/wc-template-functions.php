@@ -1180,7 +1180,7 @@ if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
 	 */
 	function woocommerce_template_loop_category_title( $category ) {
 		?>
-		<h2 class="woocommerce-loop-category__title">
+		<h2 class="woocommerce-loop-category__title"> 99
 			<?php
 			echo esc_html( $category->name );
 
