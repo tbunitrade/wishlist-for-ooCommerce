@@ -17,6 +17,8 @@
  * Domain Path:          /languages
  * WC requires at least: 8.0.2
  *
+ * @package OsonyWishlist
+ *
  */
 
 
@@ -24,6 +26,7 @@ defined( 'ABSPATH' ) or die('No cheating');
 
 // defined zone for mail rules, path, versions
 //define('OSONY_WISHLIST_VERSION', '1.0.0');
+define('OSONY_WISHLIST_BASEPATH', plugin_dir_path(__FILE__));
 define('OSONY_WISHLIST_BASEURL', plugin_dir_url(__FILE__));
 
 
@@ -36,19 +39,27 @@ spl_autoload_register( function($cLassName) {
     //require_once plugin_dir_path (__FILE__).'public/class-wishlist-osony-public.php';
 });
 
-require_once plugin_dir_path (__FILE__).'libraries/class-wishlist.php';
-require_once plugin_dir_path (__FILE__).'libraries/class-wishlist-ajax.php';
+require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist.php';
+
+
+require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist-ajax.php';
 
 if (class_exists('Wishlist')) {
     $WishListPlugin = new Wishlist();
     $WishListPlugin->register();
+    //Wishlist::register();
 }
 
-$WishListPluginAjax = new WishlistAjax();
+if ( class_exists('WishlistAjax')) {
+    $WishListPluginAjax = new WishlistAjax();
+    $WishListPluginAjax->register_post_type();
+}
 
-$WishListPluginAjax->register_post_type();
 
+// activation
 
 register_activation_hook( __FILE__, array($WishListPlugin, 'activate'));
 
-register_deactivation_hook(__FILE__, array($WishListPlugin, 'deactivate'));
+// deactivation
+require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist-deactivate.php';
+register_deactivation_hook(__FILE__, array('WishlistDeactivate', 'deactivate'));

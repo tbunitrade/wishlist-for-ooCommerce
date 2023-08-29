@@ -33,3 +33,409 @@ Stack trace:
 #7 {main}
   thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
 
+2023-08-28T17:23:34+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, non-static method Wishlist::whishlist_show_in_catalog_mode() cannot be called statically in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(205): WP_Hook->apply_filters('woocommerce-loo...', Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1171): apply_filters('woocommerce_pro...', 'woocommerce-loo...')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): woocommerce_template_loop_product_title('')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/content-product.php(49): do_action('woocommerce_sho...')
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template.php(787): require('/Applications/M...')
+#7 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/Applications/M...', false)
+#8 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/archive-product.php(70): wc_get_template_part('content', 'product')
+#9 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#11 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#12 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-28T17:23:56+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, non-static method Wishlist::whishlist_show_in_catalog_mode() cannot be called statically in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(205): WP_Hook->apply_filters('woocommerce-loo...', Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1171): apply_filters('woocommerce_pro...', 'woocommerce-loo...')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): woocommerce_template_loop_product_title('')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/content-product.php(49): do_action('woocommerce_sho...')
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template.php(787): require('/Applications/M...')
+#7 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/Applications/M...', false)
+#8 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/archive-product.php(70): wc_get_template_part('content', 'product')
+#9 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#11 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#12 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-28T17:24:09+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, non-static method Wishlist::whishlist_show_on_product_page() cannot be called statically in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/content-single-product.php(60): do_action('woocommerce_sin...')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template.php(787): require('/Applications/M...')
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/Applications/M...', false)
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#7 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#8 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#9 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-28T17:24:12+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, non-static method Wishlist::whishlist_show_in_catalog_mode() cannot be called statically in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(205): WP_Hook->apply_filters('woocommerce-loo...', Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1171): apply_filters('woocommerce_pro...', 'woocommerce-loo...')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): woocommerce_template_loop_product_title('')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/content-product.php(49): do_action('woocommerce_sho...')
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template.php(787): require('/Applications/M...')
+#7 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/Applications/M...', false)
+#8 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/archive-product.php(70): wc_get_template_part('content', 'product')
+#9 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#11 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#12 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-28T17:24:43+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, non-static method Wishlist::whishlist_show_in_catalog_mode() cannot be called statically in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(205): WP_Hook->apply_filters('woocommerce-loo...', Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1171): apply_filters('woocommerce_pro...', 'woocommerce-loo...')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): woocommerce_template_loop_product_title('')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/content-product.php(49): do_action('woocommerce_sho...')
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template.php(787): require('/Applications/M...')
+#7 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/Applications/M...', false)
+#8 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/archive-product.php(70): wc_get_template_part('content', 'product')
+#9 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#11 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#12 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-28T17:45:49+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:45:50+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:45:50+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:48:06+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:48:08+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:48:08+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:52:05+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:52:07+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:52:07+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:53:05+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:53:07+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:53:07+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:54:10+00:00 CRITICAL Uncaught Error: Failed opening required ' . http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:54:12+00:00 CRITICAL Uncaught Error: Failed opening required ' . http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:54:12+00:00 CRITICAL Uncaught Error: Failed opening required ' . http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:55:17+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/ libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:55:18+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/ libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:55:18+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/ libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:55:36+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:55:38+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:55:38+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:57:00+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist//class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:67
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 67
+
+2023-08-28T17:57:02+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist//class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:67
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 67
+
+2023-08-28T17:57:02+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist//class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:67
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 67
+
+2023-08-28T17:57:28+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:67
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 67
+
+2023-08-28T17:57:30+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:67
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 67
+
+2023-08-28T17:57:30+00:00 CRITICAL Uncaught Error: Failed opening required 'http://localhost:8888/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:67
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 67
+
+2023-08-28T17:58:51+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist//class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate(false)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(693): do_action('activate_osony-...', false)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:58:53+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist//class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T17:58:53+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist//class-wishlist-activate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php:66
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->activate('')
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(194): do_action('activate_osony-...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 66
+
+2023-08-28T18:00:01+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/libraries/class-wishlist.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(2318): include_once()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(663): plugin_sandbox_scrape('osony-woocomerc...')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php on line 42
+
+2023-08-28T18:00:03+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/libraries/class-wishlist.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(2318): include_once()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(192): plugin_sandbox_scrape('osony-woocomerc...')
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php on line 42
+
+2023-08-28T18:00:03+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/libraries/class-wishlist.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(2318): include_once()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(192): plugin_sandbox_scrape('osony-woocomerc...')
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php on line 42
+
+2023-08-28T18:01:25+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/libraries/class-wishlist-deactivate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php:64
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(2318): include_once()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(663): plugin_sandbox_scrape('osony-woocomerc...')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(58): activate_plugin('osony-woocomerc...', 'http://localhos...', false)
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php on line 64
+
+2023-08-28T18:01:26+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/libraries/class-wishlist-deactivate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php:64
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(2318): include_once()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(192): plugin_sandbox_scrape('osony-woocomerc...')
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php on line 64
+
+2023-08-28T18:01:26+00:00 CRITICAL Uncaught Error: Failed opening required '/Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/libraries/class-wishlist-deactivate.php' (include_path='.:/Applications/MAMP/bin/php/php8.2.0/lib/php') in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php:64
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/includes/plugin.php(2318): include_once()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(192): plugin_sandbox_scrape('osony-woocomerc...')
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/osony-wishlist.php on line 64
+

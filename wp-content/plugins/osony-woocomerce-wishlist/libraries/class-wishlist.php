@@ -27,22 +27,12 @@ class Wishlist {
 
     }
 
-    public function activate() {
-        $this->custom_post_type();
-        // flush rewrite rules
-        flush_rewrite_rules();
-    }
-
-    public function deactivate() {
-        flush_rewrite_rules();
-    }
-
     protected function print_stuff() {
-        echo 'sonich3';
+        //echo 'sonich3';
     }
 
     private function the_print_stuff() {
-        echo 'testSoni';
+        //echo 'testSoni';
     }
 
     public function custom_post_type() {
@@ -72,5 +62,10 @@ class Wishlist {
         echo '<img class="osony-wishlist-svg" src="'. $url.'">';
     }
 
+    function activate() {
+        require_once plugin_dir_path (__DIR__) . 'libraries/class-wishlist-activate.php';
+        //require_once  OSONY_WISHLIST_BASEURL . 'libraries/class-wishlist-activate.php';
+        WishlistActivate::activate();
+    }
 
 }
