@@ -40,26 +40,4 @@ spl_autoload_register( function($cLassName) {
 });
 
 require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist.php';
-
-
 require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist-ajax.php';
-
-if (class_exists('Wishlist')) {
-    $WishListPlugin = new Wishlist();
-    $WishListPlugin->register();
-    //Wishlist::register();
-}
-
-if ( class_exists('WishlistAjax')) {
-    $WishListPluginAjax = new WishlistAjax();
-    $WishListPluginAjax->register_post_type();
-}
-
-
-// activation
-
-register_activation_hook( __FILE__, array($WishListPlugin, 'activate'));
-
-// deactivation
-require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist-deactivate.php';
-register_deactivation_hook(__FILE__, array('WishlistDeactivate', 'deactivate'));

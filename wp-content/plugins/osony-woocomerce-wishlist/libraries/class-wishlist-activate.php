@@ -7,7 +7,7 @@ class WishlistActivate {
 
     public static function activate() {
 
-        //echo 'test!';
+        echo 'test!';
         flush_rewrite_rules();
     }
 }
