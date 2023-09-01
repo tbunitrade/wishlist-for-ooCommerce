@@ -9,7 +9,7 @@ if ( file_exists( DIR_NAME. '/vendor/autoload.php' )) {
 
 use Inc\Activate;
 use Inc\Deactivate;
-use Inc\AdminPages;
+use Inc\Admin\AdminPages;
 
 //require_once DIR_NAME . '/libraries/Admin/AdminPages.php';
 
