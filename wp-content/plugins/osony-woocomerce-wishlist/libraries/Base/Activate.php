@@ -3,7 +3,7 @@
  * @package OsonyWishlist
  */
 
-namespace  Inc;
+namespace  Inc\Base;
 
 class Activate {
 
