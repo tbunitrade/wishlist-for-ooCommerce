@@ -3,7 +3,9 @@
  * @package OsonyWishlist
  */
 
-class WishlistActivate {
+namespace  Inc;
+
+class Activate {
 
     public static function activate() {
 

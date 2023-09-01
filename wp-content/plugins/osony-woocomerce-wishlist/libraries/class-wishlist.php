@@ -2,6 +2,24 @@
 if (!defined('WPINC')) {
     die('No cheating');
 }
+
+//$dir = DIR_NAME .'vendor/autoload.php' ;
+//echo $dir . '<h1>dir</h1>';
+
+//require_once OSONY_WISHLIST_DIR . '/vendor/autoload.php' ;
+
+//if ( file_exists( dirname(__FILE__) . '/vedor/autoload.php' )) {
+if ( file_exists( DIR_NAME. '/vendor/autoload.php' )) {
+    //echo 'Yes';
+    require_once DIR_NAME . '/vendor/autoload.php' ;
+}
+//else {
+//    //echo 'no';
+//}
+
+use Inc\Activate;
+use Inc\Deactivate;
+
 if (!class_exists('WishlistActivate')) {
 
     class Wishlist {
@@ -96,10 +114,12 @@ if (!class_exists('WishlistActivate')) {
         }
 
         function activate() {
-            require_once plugin_dir_path (__DIR__) . 'libraries/class-wishlist-activate.php';
+            //require_once plugin_dir_path (__DIR__) . 'libraries/class-wishlist-activate.php';
             //require_once  OSONY_WISHLIST_BASEURL . 'libraries/class-wishlist-activate.php';
-            WishlistActivate::activate();
+            //WishlistActivate::activate();
+            Activate::activate();
         }
+
     }
 
     //if (class_exists('Wishlist')) {
@@ -118,6 +138,6 @@ if (!class_exists('WishlistActivate')) {
     register_activation_hook( __FILE__, array($WishListPlugin, 'activate'));
 
 // deactivation
-    require_once plugin_dir_path (__FILE__) . 'class-wishlist-deactivate.php';
-    register_deactivation_hook(__FILE__, array('WishlistDeactivate', 'deactivate'));
+    //require_once plugin_dir_path (__FILE__) . 'class-wishlist-deactivate.php';
+    register_deactivation_hook(__FILE__, array('Deactivate', 'deactivate'));
 }

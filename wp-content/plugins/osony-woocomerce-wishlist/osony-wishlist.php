@@ -30,6 +30,8 @@ define('OSONY_WISHLIST_BASEPATH', plugin_dir_path(__FILE__));
 define('OSONY_WISHLIST_BASEURL', plugin_dir_url(__FILE__));
 define('OSONY_WISHLIST_PLUGIN_NAME', 'osony-wishlist');
 define('OSONY_WISHLIST_PLUGIN_NAME_2', plugin_basename(__FILE__));
+define('OSONY_WISHLIST_DIR', plugin_basename(__DIR__));
+define('DIR_NAME' , dirname(__FILE__));
 
 
 
