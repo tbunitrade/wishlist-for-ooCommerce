@@ -3,19 +3,9 @@ if (!defined('WPINC')) {
     die('No cheating');
 }
 
-//$dir = DIR_NAME .'vendor/autoload.php' ;
-//echo $dir . '<h1>dir</h1>';
-
-//require_once OSONY_WISHLIST_DIR . '/vendor/autoload.php' ;
-
-//if ( file_exists( dirname(__FILE__) . '/vedor/autoload.php' )) {
 if ( file_exists( DIR_NAME. '/vendor/autoload.php' )) {
-    //echo 'Yes';
     require_once DIR_NAME . '/vendor/autoload.php' ;
 }
-//else {
-//    //echo 'no';
-//}
 
 use Inc\Activate;
 use Inc\Deactivate;
@@ -75,14 +65,6 @@ if (!class_exists('WishlistActivate')) {
 
         public function admin_index() {
             //this is template
-//            $test = plugin_dir_path(__FILE__) ;
-//
-//            var_dump($test);
-//
-//            $test2 = plugin_dir_path(__DIR__) ;
-//
-//            var_dump($test2);
-
             require_once plugin_dir_path(__DIR__). 'templates/admin.php';
         }
 
@@ -138,6 +120,5 @@ if (!class_exists('WishlistActivate')) {
     register_activation_hook( __FILE__, array($WishListPlugin, 'activate'));
 
 // deactivation
-    //require_once plugin_dir_path (__FILE__) . 'class-wishlist-deactivate.php';
     register_deactivation_hook(__FILE__, array('Deactivate', 'deactivate'));
 }
