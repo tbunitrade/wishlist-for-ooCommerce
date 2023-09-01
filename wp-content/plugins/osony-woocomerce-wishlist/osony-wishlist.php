@@ -28,6 +28,9 @@ defined( 'ABSPATH' ) or die('No cheating');
 //define('OSONY_WISHLIST_VERSION', '1.0.0');
 define('OSONY_WISHLIST_BASEPATH', plugin_dir_path(__FILE__));
 define('OSONY_WISHLIST_BASEURL', plugin_dir_url(__FILE__));
+define('OSONY_WISHLIST_PLUGIN_NAME', 'osony-wishlist');
+define('OSONY_WISHLIST_PLUGIN_NAME_2', plugin_basename(__FILE__));
+
 
 
 ////Load old Config
