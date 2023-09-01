@@ -1,0 +1,14 @@
+{
+    "name": "osony/osony-woocomerce-wishlist",
+    "description": "Simple plugin Wishlist for Woocommerce",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "tbunitrade",
+            "email": "tbunitrade@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
