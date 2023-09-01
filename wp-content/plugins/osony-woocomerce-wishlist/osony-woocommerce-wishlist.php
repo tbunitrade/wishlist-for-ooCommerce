@@ -21,18 +21,7 @@
  *
  */
 
-
 defined( 'ABSPATH' ) or die('No cheating');
-
-//// defined zone for mail rules, path, versions
-////define('OSONY_WISHLIST_VERSION', '1.0.0');
-//
-//define('OSONY_WISHLIST_BASEPATH', plugin_dir_path(__FILE__));
-//define('OSONY_WISHLIST_BASEURL', plugin_dir_url(__FILE__));
-//define('OSONY_WISHLIST_PLUGIN_NAME', 'osony-wishlist');
-//define('OSONY_WISHLIST_PLUGIN_NAME_2', plugin_basename(__FILE__));
-//define('OSONY_WISHLIST_DIR', plugin_basename(__DIR__));
-
 
 // defined Conctant only for require_once functions
 define('DIR_NAME' , dirname(__FILE__));
@@ -40,7 +29,6 @@ define('PLUGIN_PATH', plugin_dir_path(__FILE__));
 
 // defined for style the url
 define('PLUGIN_URL', plugin_dir_url(__FILE__));
-
 
 if ( file_exists( DIR_NAME. '/vendor/autoload.php' )) {
     require_once DIR_NAME . '/vendor/autoload.php' ;
@@ -50,16 +38,3 @@ if (  class_exists('Inc\\Init')) {
     //Inc\Init::class and method
     Inc\Init::register_services();
 }
-//
-//
-//////Load old Config
-////require_once 'config/config.php';
-//
-//// Autoload Core Libraries
-//spl_autoload_register( function($cLassName) {
-//    //require_once plugin_dir_path (__FILE__).'libraries/class-wishlist.php';
-//    //require_once plugin_dir_path (__FILE__).'public/class-wishlist-osony-public.php';
-//});
-//
-//require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist.php';
-//require_once plugin_dir_path (__FILE__) . 'libraries/class-wishlist-ajax.php';
