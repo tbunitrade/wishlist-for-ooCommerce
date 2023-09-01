@@ -1,0 +1,98 @@
+2023-08-31T14:17:05+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, non-static method Wishlist::public_enqueue() cannot be called statically in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/script-loader.php(2227): do_action('wp_enqueue_scri...')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): wp_enqueue_scripts('')
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/general-template.php(3053): do_action('wp_head')
+#7 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/themes/storefront/header.php(18): wp_head()
+#8 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template.php(785): require_once('/Applications/M...')
+#9 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template.php(720): load_template('/Applications/M...', true, Array)
+#10 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/woocommerce/templates/archive-product.php(20): get_header('shop')
+#12 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/template-loader.php(106): include('/Applications/M...')
+#13 /Applications/MAMP/htdocs/devshore-woocommerce/wp-blog-header.php(19): require_once('/Applications/M...')
+#14 /Applications/MAMP/htdocs/devshore-woocommerce/index.php(17): require('/Applications/M...')
+#15 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-31T14:17:37+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, non-static method Wishlist::admin_enqueue() cannot be called statically in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin-header.php(118): do_action('admin_enqueue_s...', 'nav-menus.php')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/nav-menus.php(694): require_once('/Applications/M...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-31T14:23:20+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "Whishlist" not found in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin-header.php(118): do_action('admin_enqueue_s...', 'plugins.php')
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/plugins.php(605): require_once('/Applications/M...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php on line 310
+
+2023-08-31T15:20:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function plugin_dir_path(), 0 passed in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 36 and exactly 1 expected in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php:835
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php(36): plugin_dir_path()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->admin_index('')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin.php(259): do_action('toplevel_page_w...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php on line 835
+
+2023-08-31T15:20:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function plugin_dir_path(), 0 passed in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 36 and exactly 1 expected in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php:835
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php(36): plugin_dir_path()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->admin_index('')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin.php(259): do_action('toplevel_page_w...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php on line 835
+
+2023-08-31T15:21:12+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function plugin_dir_path(), 0 passed in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 36 and exactly 1 expected in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php:835
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php(36): plugin_dir_path()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->admin_index('')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin.php(259): do_action('toplevel_page_w...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php on line 835
+
+2023-08-31T15:22:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function plugin_dir_path(), 0 passed in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 36 and exactly 1 expected in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php:835
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php(36): plugin_dir_path()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->admin_index('')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin.php(259): do_action('toplevel_page_w...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php on line 835
+
+2023-08-31T15:22:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function plugin_dir_path(), 0 passed in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 36 and exactly 1 expected in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php:835
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php(36): plugin_dir_path()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->admin_index('')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin.php(259): do_action('toplevel_page_w...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php on line 835
+
+2023-08-31T15:24:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function plugin_dir_path(), 0 passed in /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php on line 44 and exactly 1 expected in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php:835
+Stack trace:
+#0 /Applications/MAMP/htdocs/devshore-woocommerce/wp-content/plugins/osony-woocomerce-wishlist/libraries/class-wishlist.php(44): plugin_dir_path()
+#1 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(310): Wishlist->admin_index('')
+#2 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /Applications/MAMP/htdocs/devshore-woocommerce/wp-admin/admin.php(259): do_action('toplevel_page_w...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/devshore-woocommerce/wp-includes/plugin.php on line 835
+
