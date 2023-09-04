@@ -6,7 +6,9 @@
 
 namespace Inc\Pages;
 
-class Admin {
+use \Inc\Base\BaseController;
+
+class Admin extends BaseController{
 
     public function register() {
         // register main page for Plugin
@@ -19,7 +21,7 @@ class Admin {
 
     public function admin_index() {
         //this is template
-        require_once PLUGIN_PATH . 'templates/admin.php';
+        require_once $this->plugin_path. 'templates/admin.php';
     }
 
 }

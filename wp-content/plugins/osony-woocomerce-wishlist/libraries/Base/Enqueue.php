@@ -5,7 +5,9 @@
 
 namespace Inc\Base;
 
-class Enqueue {
+use \Inc\Base\BaseController;
+
+class Enqueue extends BaseController {
 
     public function register() {
         // register styles and scripts for Plugin
@@ -16,12 +18,12 @@ class Enqueue {
 
     public function public_enqueue() {
         // enqueue all our scripts
-        wp_enqueue_style('wishlist-stylesheet', PLUGIN_URL .  '/public/css/class-stylesheet-wishlist-public.css');
-        wp_enqueue_script('wishlist-script', PLUGIN_URL .  'public/js/class-js-wishlist-public.js');
+        wp_enqueue_style('wishlist-stylesheet', $this->plugin_url .  '/public/css/class-stylesheet-wishlist-public.css');
+        wp_enqueue_script('wishlist-script', $this->plugin_url .  'public/js/class-js-wishlist-public.js');
     }
 
     public function admin_enqueue() {
         // enqueue all our scripts
-        wp_enqueue_style('stylesheet', PLUGIN_URL. 'public/css/class-stylesheet-wishlist-admin.css'  );
+        wp_enqueue_style('stylesheet', $this->plugin_url. 'public/css/class-stylesheet-wishlist-admin.css'  );
     }
 }

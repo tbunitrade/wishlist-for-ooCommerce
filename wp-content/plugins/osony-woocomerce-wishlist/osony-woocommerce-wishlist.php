@@ -24,40 +24,29 @@
 defined( 'ABSPATH' ) or die('No cheating');
 
 // Require one the Composer Autoload
-if ( file_exists( DIR_NAME. '/vendor/autoload.php' )) {
-    require_once DIR_NAME . '/vendor/autoload.php' ;
+if ( file_exists( dirname(__FILE__). '/vendor/autoload.php' )) {
+    require_once dirname(__FILE__) . '/vendor/autoload.php' ;
 }
-
-// defined CONSTANTS
-define('DIR_NAME' , dirname(__FILE__));
-define('PLUGIN_PATH', plugin_dir_path(__FILE__));
-
-// defined for style the url
-define('PLUGIN_URL', plugin_dir_url(__FILE__));
-
-// this is for activation and deactivation hooks
-define('PLUGIN', plugin_basename(__FILE__) );
-
 
 /**
- * The code that run during plugin activation
  * WP required activation and deactivation hook be registered outside any class.
+ * The code that run during plugin activation
+ *
  */
 
-
-use Inc\Base\Activate;
-use Inc\Base\Deactivate;
-
 function activate_wishlist_plugin() {
-    Activate::activate();
-}
-
-function deactivate_wishlist_plugin() {
-    Deactivate::deactivate();
+    Inc\Base\Activate::activate();
 }
 register_activation_hook( __FILE__ , 'activate_wishlist_plugin');
+
+/**
+ * WP required activation and deactivation hook be registered outside any class.
+ * The code that runs during plugin deactivation
+ */
+function deactivate_wishlist_plugin() {
+    Inc\Base\Deactivate::deactivate();
+}
 register_deactivation_hook(__FILE__, 'deactivate_wishlist_plugin');
-//end of activation hook
 
 /**
  * Init the core main Class of the plugin
