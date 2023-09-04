@@ -26,6 +26,7 @@ defined( 'ABSPATH' ) or die('No cheating');
 // defined Conctant only for require_once functions
 define('DIR_NAME' , dirname(__FILE__));
 define('PLUGIN_PATH', plugin_dir_path(__FILE__));
+define('PLUGIN', plugin_basename(__FILE__) );
 
 // defined for style the url
 define('PLUGIN_URL', plugin_dir_url(__FILE__));

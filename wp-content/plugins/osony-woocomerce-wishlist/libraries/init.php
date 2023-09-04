@@ -17,7 +17,8 @@ final class Init {
         return [
             // we need to add class here
             Pages\Admin::class,
-            Base\Enqueue::class
+            Base\Enqueue::class,
+            Base\SettingsLinks::class
         ];
     }
 
