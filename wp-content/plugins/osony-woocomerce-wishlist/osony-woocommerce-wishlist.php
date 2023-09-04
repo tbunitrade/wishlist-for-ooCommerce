@@ -20,21 +20,48 @@
  * @package OsonyWishlist
  *
  */
-
+// If this file is called directly, abort rquest.
 defined( 'ABSPATH' ) or die('No cheating');
 
-// defined Conctant only for require_once functions
-define('DIR_NAME' , dirname(__FILE__));
-define('PLUGIN_PATH', plugin_dir_path(__FILE__));
-define('PLUGIN', plugin_basename(__FILE__) );
-
-// defined for style the url
-define('PLUGIN_URL', plugin_dir_url(__FILE__));
-
+// Require one the Composer Autoload
 if ( file_exists( DIR_NAME. '/vendor/autoload.php' )) {
     require_once DIR_NAME . '/vendor/autoload.php' ;
 }
 
+// defined CONSTANTS
+define('DIR_NAME' , dirname(__FILE__));
+define('PLUGIN_PATH', plugin_dir_path(__FILE__));
+
+// defined for style the url
+define('PLUGIN_URL', plugin_dir_url(__FILE__));
+
+// this is for activation and deactivation hooks
+define('PLUGIN', plugin_basename(__FILE__) );
+
+
+/**
+ * The code that run during plugin activation
+ * WP required activation and deactivation hook be registered outside any class.
+ */
+
+
+use Inc\Base\Activate;
+use Inc\Base\Deactivate;
+
+function activate_wishlist_plugin() {
+    Activate::activate();
+}
+
+function deactivate_wishlist_plugin() {
+    Deactivate::deactivate();
+}
+register_activation_hook( __FILE__ , 'activate_wishlist_plugin');
+register_deactivation_hook(__FILE__, 'deactivate_wishlist_plugin');
+//end of activation hook
+
+/**
+ * Init the core main Class of the plugin
+ */
 if (  class_exists('Inc\\Init')) {
     //Inc\Init::class and method
     Inc\Init::register_services();

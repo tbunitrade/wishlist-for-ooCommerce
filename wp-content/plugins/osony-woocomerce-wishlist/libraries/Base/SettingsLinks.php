@@ -18,7 +18,10 @@ class SettingsLinks {
     }
 
     public function register() {
-        add_filter("plugin_action_links_" . PLUGIN, array($this, 'settings_link') , 1);
+        // constatn usage
+        // add_filter("plugin_action_links_" . PLUGIN, array($this, 'settings_link') , 1);
+
+        add_filter("plugin_action_links_$this->plugin", array($this, 'settings_link'));
     }
 
     public function settings_link ($links) {
